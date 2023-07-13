@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Company</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans&family=Fontdiner+Swanky&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+</head>
+    <!--  npx tailwindcss -i ./main.css -o ./styles.css --watch  -->
+<body>
+    
+    <!--Navbar-->
+    <nav class="bg-white">
+        <div class="relative flex max-w-[1200px] h-24 mx-auto">
+            <!--Logo-->
+            <div class="absolute -left-3 top-2">
+                <svg width="75" height="77.58" viewBox="0 0 117 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_6_55)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M110.015 6.59722C110.821 2.87639 110.015 0.171527 106.453 0.171527H94.6074C91.6194 0.171527 90.2396 2.53993 89.4344 5.07326C89.4344 5.07326 83.3408 26.7122 74.8315 40.7411C72.072 44.7984 70.8076 46.1509 69.3125 46.1509C68.5073 46.1509 67.4713 44.7984 67.4713 41.0809V6.4224C67.4713 2.02865 66.553 0 64.0219 0H45.3929C43.5517 0 42.4026 2.02865 42.4026 4.05729C42.4026 8.28281 46.6573 9.29878 47.1164 21.1309V46.8403C47.1164 52.4182 46.4379 53.4375 44.9314 53.4375C40.9075 53.4375 31.1338 31.6304 25.271 6.78194C24.131 1.86042 22.9729 0 19.9826 0H8.02393C4.57452 0 4 2.3651 4 4.90174C4 9.46701 8.02393 32.455 22.7421 62.8814C32.5158 83.6627 46.4288 94.8318 58.962 94.8318C66.553 94.8318 67.4713 92.2951 67.4713 88.0696V72.3484C67.4713 67.2785 68.1612 66.434 70.5769 66.434C72.3005 66.434 75.4061 67.7832 82.4202 77.7582C90.4681 89.5903 91.8479 95 96.3332 95H108.177C111.626 95 113.236 92.4634 112.316 87.5616C111.282 82.6599 107.371 75.5613 102.311 67.1102C99.5519 62.38 95.4126 57.1385 94.1482 54.6019C92.4246 51.2208 92.8838 49.8684 94.1482 46.8271C94.0329 46.8271 108.523 16.7372 110.015 6.58403" fill="url(#paint0_linear_6_55)"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_6_55" x="0.410867" y="0" width="115.75" height="102.178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="3.58913"/>
+                    <feGaussianBlur stdDeviation="1.79457"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.208333 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_55"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_55" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_6_55" x1="58.2856" y1="0" x2="58.2856" y2="95" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFDC7C"/>
+                    <stop offset="0.505208" stop-color="#F9E9BF"/>
+                    <stop offset="1" stop-color="#FFDE82"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>  
+            </div>
+
+            <!--Search-->
+            <div class="flex absolute right-5 top-7 space-x-3">
+                <!--search bar-->
+                <div class="search flex">
+                    <form action="#" class="all  ">
+                        <input type="text"
+                            placeholder=" Search for Ring Necklace..."
+                            name="search" class="w-[40rem] py-2  placeholder:text-[#954C4C] pl-10 rounded-lg border-[1.5px] border-[#FFDC7C] focus:outline-[1.5px] outline-[#FFDC7C]">     
+                    </form>
+
+                    <img src="./images/Search.png" class="scale-75 absolute left-2 top-2">
+                    <img src="./images/mic.png" class="scale-75 absolute right-[11.4rem] top-[0.30rem]">
+                </div>
+                <!--icons-->
+                <div class="flex space-x-2 ">
+                    <img src="./images/Basket.png" class="cursor-pointer scale-75 hover:scale-90 transition duration-100">
+
+                    <img src="./images/Heart.png" class="cursor-pointer scale-75 hover:scale-90 transition duration-100">
+
+                   <img src="./images/User.png" class="cursor-pointer scale-75 hover:scale-90 transition duration-100">
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--ITEM BAR--> 
+    <section class="my-6">
+        <div class="max-w-[1080px] mx-auto ">
+            <ul class="flex justify-between">
+                <li>
+                    <div class="flex items-center gap-x-2 cursor-pointer hover:opacity-80">
+                        Shop All
+                        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0L5 5L10 0H0Z" fill="#699BF7"/>
+                        </svg>
+                    </div>
+                    <div class="h-1 w-16 bg-[#7C82FF]"></div>       
+                </li>
+
+                <li class="cursor-pointer hover:opacity-80">Gold</li>
+                <li class="cursor-pointer hover:opacity-80">Diamond</li>
+                <li class="cursor-pointer hover:opacity-80">Earrings</li>
+                <li class="cursor-pointer hover:opacity-80">Pendants</li>
+                <li class="cursor-pointer hover:opacity-80">Rings</li>
+                <li class="cursor-pointer hover:opacity-80">Collections</li>
+                <li class="cursor-pointer hover:opacity-80">More</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Hero section-->
+    <section class="relative">
+        <!--Left/Right Arrows-->
+        <div class="mx-auto">
+            <div class="absolute left-28 top-40">
+                <img src="./images/banner_arrows-left.png" alt="" class="w-10 cursor-pointer">
+            </div>
+            <div class="absolute right-28 top-40">
+                <img src="./images/banner_arrows-right.png" alt="" class="w-10 cursor-pointer">
+            </div>
+    
+            <div class="max-w-[1080px] mx-auto">
+                <img src="./images/newArrival.png" >
+            </div>
+        </div>
+
+        <!--4dots-->
+        <div class="flex relative mt-4 justify-center gap-x-4">
+            <div class="w-3 h-3 rounded-full bg-[#A7B6DD] cursor-pointer"></div>
+            <div class="w-3 h-3 rounded-full bg-[#A7B6DD] cursor-pointer"></div>
+            <div class="w-3 h-3 rounded-full bg-[#A7B6DD] cursor-pointer"></div>
+            <div class="w-3 h-3 rounded-full bg-[#A7B6DD] cursor-pointer"></div>
+        </div>
+
+    </section>
+
+    <!--Diverse Categories-->
+    <section class="mt-16">
+        <!--Section Heading-->
+        <div class="max-w-[1280px] w-11/12 mx-auto ">
+            <div class="flex flex-col gap-y-2">
+                <h2 class="mx-auto text-4xl text-transparent  bg-clip-text bg-gradient-to-b from-[#651A1A] to-[#FF0808] font-comorant">DIVE INTO THE DIVERSE CATAGORIES</h2>
+                <p class="mx-auto max-w-[850px] text-center text-[#6066FF] font-semibold">
+                    Indulge in timeless elegance and capture the essence of your unique style with our
+                    exquisite collection of fine jewelry, meticulously crafted to radiate beauty and sophistication.
+                </p>
+                <img src="./images/hr lines.jpg" alt="" class="mx-auto" >  
+            </div>
+
+            <div class="grid grid-cols-4 gap-8 max-w-[1100px] mx-auto mt-5">
+                <img src="./images/i1.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i2.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i3.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i4.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i5.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i6.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i7.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i8.png" alt="" class="hover:scale-105 transition duration-200">
+            </div>
+
+
+            <div class="flex absolute right-20 items-center gap-x-2 mt-1">
+                <span class="text-[#7C82FF] font-semibold text-lg">Explore More</span>
+                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M14.7071 8.70711C15.0976 8.31659 15.0976 7.68342 14.7071 7.2929L8.34315 0.928936C7.95262 0.538411 7.31946 0.538411 6.92894 0.928935C6.53841 1.31946 6.53841 1.95262 6.92893 2.34315L12.5858 8.00001L6.92893 13.6569C6.53841 14.0474 6.5384 14.6805 6.92893 15.0711C7.31945 15.4616 7.95262 15.4616 8.34314 15.0711L14.7071 8.70711ZM-4.4112e-07 9L14 9.00001L14 7.00001L4.4112e-07 7L-4.4112e-07 9Z" fill="#7C82FF"/>
+                </svg>        
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!--Best Collections-->
+    <section class="mt-32">
+        <!--Section Heading-->
+        <div class="max-w-[1280px] w-11/12 mx-auto ">
+            <div class="flex flex-col gap-y-2">
+                <h2 class="mx-auto text-4xl text-transparent  bg-clip-text bg-gradient-to-b from-[#651A1A] to-[#FF0808] font-comorant">DIVE INTO THE BEST OF COLLECTIONS</h2>
+                <p class="mx-auto max-w-[850px] text-center text-[#6066FF] font-semibold">
+                    Whatever the occasion, we've got a beautiful piece of jewellery for you.
+                </p>
+                <img src="./images/hr lines.jpg" alt="" class="mx-auto">  
+            </div>
+
+            <div class="grid grid-cols-3 gap-8 max-w-[1100px] mx-auto mt-5">
+                <img src="./images/i9.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i10.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i11.png" alt="" class="hover:scale-105 transition duration-200">
+            </div> 
+            <!--unfinished-->
+            <div class="mt-7 relative justify-center max-w-[1640px] ">
+                <div class="absolute left-[33rem] bottom-12 tracking-wider  bg-[#cdc9c996] px-8 py-3 text-lg rounded-lg">Explore Now</div>
+                <img src="./images/modeExpression.png">
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!--Gender-->
+    <section class="mt-32">
+        <!--Section Heading-->
+        <div class="max-w-[1280px] w-11/12 mx-auto ">
+            <div class="flex flex-col gap-y-2">
+                <h2 class="mx-auto text-4xl text-transparent  bg-clip-text bg-gradient-to-b from-[#651A1A] to-[#FF0808] font-comorant">SHOP BY GENDER</h2>
+                <p class="mx-auto max-w-[850px] text-center text-[#6066FF] font-semibold">
+                    Whatever the occasion, we've got a beautiful piece of jewellery for you.
+                </p>
+                <img src="./images/hr lines.jpg" alt="" class="mx-auto">  
+            </div>
+
+            <div class="grid grid-cols-3 gap-8 max-w-[1100px] mx-auto mt-5">
+                <img src="./images/i12.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i13.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i14.png" alt="" class="hover:scale-105 transition duration-200">
+            </div> 
+            <!--unfinished-->
+            <div class="mt-7 relative justify-center max-w-[1640px]">
+                <div class="absolute left-[33rem] bottom-12 tracking-wider  bg-[#cdc9c996] px-8 py-3 text-lg rounded-lg">Explore Now</div>
+                <img src="./images/viva-pride.png" >
+            </div>
+        </div>
+    </section>
+
+    <!--Recommended-->
+    <section class="mt-32">
+        <!--Section Heading-->
+        <div class="max-w-[1280px] w-11/12 mx-auto ">
+            <div class="flex flex-col gap-y-2">
+                <h2 class="mx-auto text-4xl text-transparent  bg-clip-text bg-gradient-to-b from-[#651A1A] to-[#FF0808] font-comorant">RECOMMENDED FOR YOU</h2>
+                <p class="mx-auto max-w-[850px] text-center text-[#6066FF] font-semibold">
+                    Whatever the occasion, we've got a beautiful piece of jewellery for you.
+                </p>
+                <img src="./images/hr lines.jpg" alt="" class="mx-auto">  
+            </div>
+
+            <div class="grid grid-cols-4 gap-8 max-w-[1100px] mx-auto mt-5">
+                <img src="./images/i1.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i2.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i3.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i4.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i5.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i6.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i7.png" alt="" class="hover:scale-105 transition duration-200">
+                <img src="./images/i8.png" alt="" class="hover:scale-105 transition duration-200">
+            </div>
+
+        </div>
+    </section>
+
+    <!--top selling-->
+    <section class="mt-32 relative">
+        <!--section heading-->
+        <div class="max-w-[1280px] w-11/12 mx-auto  ">
+            <div class="flex flex-col gap-y-2">
+                <h2 class="mx-auto text-4xl text-transparent  bg-clip-text bg-gradient-to-b from-[#651A1A] to-[#FF0808] font-comorant">DIVE INTO THE TOP SELLING JEWELS</h2>
+                <p class="mx-auto max-w-[850px] text-center text-[#6066FF] font-semibold">
+                    Whatever the occasion, we've got a beautiful piece of jewellery for you.
+                </p>
+                <img src="./images/hr lines.jpg" alt="" class="mx-auto">  
+            </div>
+        </div>
+
+        <div class="relative grid grid-cols-3 max-w-[1000px] mx-auto mt-10 gap-x-20">
+
+            <div class="place-items-center">
+                <span class="flex items-center gap-x-2">
+                    <svg width="25" height="20" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0249 29.1504L2.94479 29.0762L11.4428 25.2539L10.6264 5.99414L0.903772 3.99023L17.6401 0.353516L16.8608 25.3281L25.0249 29.1504ZM30.9624 28.1484C30.9624 28.668 30.851 29.1257 30.6284 29.5215C30.4057 29.9173 30.1089 30.2389 29.7378 30.4863C29.3914 30.7585 28.9832 30.9564 28.5131 31.0801C28.0678 31.2285 27.6102 31.3027 27.1401 31.3027C26.6948 31.3027 26.2247 31.2409 25.7299 31.1172C25.2599 30.9935 24.827 30.7956 24.4311 30.5234C24.0353 30.276 23.7137 29.9544 23.4663 29.5586C23.2189 29.1875 23.0952 28.7422 23.0952 28.2227C23.0952 27.6784 23.2065 27.196 23.4292 26.7754C23.6766 26.3548 23.9858 26.0085 24.3569 25.7363C24.7527 25.4395 25.1857 25.2168 25.6557 25.0684C26.1258 24.9199 26.6082 24.8457 27.103 24.8457C27.5483 24.8457 27.9936 24.9323 28.4389 25.1055C28.909 25.2539 29.3296 25.4766 29.7006 25.7734C30.0717 26.0703 30.3686 26.429 30.5913 26.8496C30.8387 27.2454 30.9624 27.6784 30.9624 28.1484Z" fill="black"/>
+                    </svg>
+                    <p class="font-sans text-lg">The Premium Pearl</p>                            
+                </span>
+
+                <div class="flex">
+                    <img src="./images/premium-pearl.png" alt="" width="230" height="230" class="hover:scale-105 transition duration-200">
+                    <svg width="25" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-16 ml-4 cursor-pointer hover:scale-105 transition duration-200">
+                        <path d="M11.0545 33.1446L8.29091 28.1668L3.05455 26.9223L3.56364 21.1667L0 16.8111L3.56364 12.4555L3.05455 6.69984L8.29091 5.45538L11.0545 0.477539L16 2.73312L20.9455 0.477539L23.7091 5.45538L28.9455 6.69984L28.4364 12.4555L32 16.8111L28.4364 21.1667L28.9455 26.9223L23.7091 28.1668L20.9455 33.1446L16 30.889L11.0545 33.1446ZM14.4727 22.3334L22.6909 13.5444L20.6545 11.2888L14.4727 17.9L11.3455 14.6333L9.30909 16.8111L14.4727 22.3334Z" fill="#699BF7"/>
+                    </svg>
+                        
+                </div>
+
+
+            </div>
+
+            <div class="place-items-center">
+                <span class="flex items-center gap-x-2">
+                    <svg width="25" height="20" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.1562 10.8887C24.1562 12.2988 23.9089 13.4987 23.4141 14.4883C22.9193 15.4531 22.2637 16.2943 21.4473 17.0117C20.6309 17.7044 19.6908 18.3229 18.627 18.8672C17.5879 19.3867 16.5241 19.8939 15.4355 20.3887C14.7181 20.7103 14.013 21.069 13.3203 21.4648C12.6276 21.8359 11.972 22.2689 11.3535 22.7637C10.735 23.2337 10.166 23.7656 9.64648 24.3594C9.15169 24.9284 8.71875 25.584 8.34766 26.3262L19.0723 25.9551L23.8223 16.6035L23.043 31.2617L0.628906 30.334C0.653646 30.1855 0.678385 30.0371 0.703125 29.8887C0.703125 29.7155 0.715495 29.5423 0.740234 29.3691C0.888672 28.0827 1.34635 26.8457 2.11328 25.6582C2.90495 24.4707 3.84505 23.3822 4.93359 22.3926C6.04688 21.3783 7.24674 20.4753 8.5332 19.6836C9.81966 18.8919 11.0319 18.2487 12.1699 17.7539C13.0111 17.3828 13.8027 17.0117 14.5449 16.6406C15.3118 16.2448 15.9674 15.7871 16.5117 15.2676C17.0807 14.7233 17.526 14.0924 17.8477 13.375C18.1693 12.6576 18.3301 11.7917 18.3301 10.7773C18.3301 10.1094 18.194 9.51562 17.9219 8.99609C17.6497 8.47656 17.291 8.04362 16.8457 7.69727C16.4004 7.35091 15.8809 7.09115 15.2871 6.91797C14.7181 6.72005 14.1367 6.62109 13.543 6.62109C12.1823 6.62109 10.9701 7.0293 9.90625 7.8457C8.86719 8.66211 7.97656 9.67643 7.23438 10.8887C6.49219 12.0762 5.89844 13.3503 5.45312 14.7109C5.00781 16.0716 4.69857 17.2962 4.52539 18.3848C4.10482 15.2923 3.68424 12.237 3.26367 9.21875C2.86784 6.17578 2.47201 3.10807 2.07617 0.015625L6.30664 5.76758C7.37044 4.75326 8.58268 3.98633 9.94336 3.4668C11.3288 2.94727 12.7389 2.6875 14.1738 2.6875C15.3118 2.6875 16.4746 2.88542 17.6621 3.28125C18.8496 3.65234 19.9258 4.19661 20.8906 4.91406C21.8555 5.60677 22.6348 6.46029 23.2285 7.47461C23.847 8.48893 24.1562 9.62695 24.1562 10.8887ZM33.5078 30.1484C33.5078 30.668 33.3965 31.1257 33.1738 31.5215C32.9512 31.9173 32.6543 32.2389 32.2832 32.4863C31.9368 32.7585 31.5286 32.9564 31.0586 33.0801C30.6133 33.2285 30.1556 33.3027 29.6855 33.3027C29.2402 33.3027 28.7702 33.2409 28.2754 33.1172C27.8053 32.9935 27.3724 32.7956 26.9766 32.5234C26.5807 32.276 26.2591 31.9544 26.0117 31.5586C25.7643 31.1875 25.6406 30.7422 25.6406 30.2227C25.6406 29.6784 25.752 29.196 25.9746 28.7754C26.222 28.3548 26.5312 28.0085 26.9023 27.7363C27.2982 27.4395 27.7311 27.2168 28.2012 27.0684C28.6712 26.9199 29.1536 26.8457 29.6484 26.8457C30.0938 26.8457 30.5391 26.9323 30.9844 27.1055C31.4544 27.2539 31.875 27.4766 32.2461 27.7734C32.6172 28.0703 32.9141 28.429 33.1367 28.8496C33.3841 29.2454 33.5078 29.6784 33.5078 30.1484Z" fill="black"/>
+                    </svg>
+                        
+                    <p class="font-sans text-lg">The Premium Pearl</p>                            
+                </span>
+
+                <div class="flex">
+                    <img src="./images/premium-pearl.png" alt="" width="230" height="230" class="hover:scale-105 transition duration-200">
+                    <svg width="25" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-16 ml-4 cursor-pointer hover:scale-105 transition duration-200">
+                        <path d="M11.0545 33.1446L8.29091 28.1668L3.05455 26.9223L3.56364 21.1667L0 16.8111L3.56364 12.4555L3.05455 6.69984L8.29091 5.45538L11.0545 0.477539L16 2.73312L20.9455 0.477539L23.7091 5.45538L28.9455 6.69984L28.4364 12.4555L32 16.8111L28.4364 21.1667L28.9455 26.9223L23.7091 28.1668L20.9455 33.1446L16 30.889L11.0545 33.1446ZM14.4727 22.3334L22.6909 13.5444L20.6545 11.2888L14.4727 17.9L11.3455 14.6333L9.30909 16.8111L14.4727 22.3334Z" fill="#699BF7"/>
+                    </svg>
+                        
+                </div>
+
+
+            </div>
+
+            <div class="place-items-center">
+                <span class="flex items-center gap-x-2">
+                    <svg width="25" height="20" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.7852 23.0234C23.7852 24.4583 23.4388 25.7201 22.7461 26.8086C22.0534 27.8724 21.1628 28.763 20.0742 29.4805C19.0104 30.1979 17.8105 30.7298 16.4746 31.0762C15.1387 31.4473 13.8398 31.6328 12.5781 31.6328C11.0938 31.6328 9.65885 31.3483 8.27344 30.7793C6.88802 30.2103 5.66341 29.4062 4.59961 28.3672L0.257812 34.082L3.96875 19.127C4.11719 20.1413 4.40169 21.1556 4.82227 22.1699C5.24284 23.1842 5.78711 24.0996 6.45508 24.916C7.12305 25.7324 7.91471 26.4004 8.83008 26.9199C9.74544 27.4395 10.7598 27.6992 11.873 27.6992C12.4421 27.6992 13.0111 27.6126 13.5801 27.4395C14.1738 27.2415 14.7057 26.9694 15.1758 26.623C15.6458 26.2767 16.0293 25.8561 16.3262 25.3613C16.623 24.8418 16.7715 24.2604 16.7715 23.6172C16.7715 22.8255 16.5983 22.1576 16.252 21.6133C15.9056 21.069 15.4603 20.6361 14.916 20.3145C14.3717 19.9681 13.7533 19.7207 13.0605 19.5723C12.3926 19.4238 11.7246 19.3496 11.0566 19.3496C10.6855 19.3496 10.3021 19.362 9.90625 19.3867C9.53516 19.4115 9.17643 19.4362 8.83008 19.4609L8.9043 15.416C9.47331 15.515 10.0299 15.6139 10.5742 15.7129C11.1185 15.7871 11.6751 15.8242 12.2441 15.8242C12.8874 15.8242 13.5059 15.7376 14.0996 15.5645C14.7181 15.3913 15.25 15.1315 15.6953 14.7852C16.1654 14.4388 16.5365 14.0059 16.8086 13.4863C17.1055 12.9421 17.2539 12.3112 17.2539 11.5938C17.2539 10.9753 17.1055 10.4062 16.8086 9.88672C16.5117 9.34245 16.1283 8.88477 15.6582 8.51367C15.1882 8.11784 14.6562 7.80859 14.0625 7.58594C13.4688 7.36328 12.875 7.25195 12.2812 7.25195C11.168 7.25195 10.1413 7.48698 9.20117 7.95703C8.28581 8.42708 7.48177 9.05794 6.78906 9.84961C6.12109 10.6165 5.55208 11.4948 5.08203 12.4844C4.63672 13.4492 4.3151 14.4388 4.11719 15.4531L0.925781 0.423828L5.08203 6.28711C6.09635 5.37174 7.20964 4.64193 8.42188 4.09766C9.65885 3.55339 10.9701 3.28125 12.3555 3.28125C13.5182 3.28125 14.7305 3.44206 15.9922 3.76367C17.2539 4.08529 18.4043 4.58008 19.4434 5.24805C20.4824 5.91602 21.3359 6.75716 22.0039 7.77148C22.6719 8.78581 23.0059 9.97331 23.0059 11.334C23.0059 12.5215 22.8079 13.5729 22.4121 14.4883C22.0163 15.3789 21.373 16.1953 20.4824 16.9375C21.5215 17.556 22.3255 18.4342 22.8945 19.5723C23.4883 20.6855 23.7852 21.8359 23.7852 23.0234ZM32.8027 30.1484C32.8027 30.668 32.6914 31.1257 32.4688 31.5215C32.2461 31.9173 31.9492 32.2389 31.5781 32.4863C31.2318 32.7585 30.8236 32.9564 30.3535 33.0801C29.9082 33.2285 29.4505 33.3027 28.9805 33.3027C28.5352 33.3027 28.0651 33.2409 27.5703 33.1172C27.1003 32.9935 26.6673 32.7956 26.2715 32.5234C25.8757 32.276 25.554 31.9544 25.3066 31.5586C25.0592 31.1875 24.9355 30.7422 24.9355 30.2227C24.9355 29.6784 25.0469 29.196 25.2695 28.7754C25.5169 28.3548 25.8262 28.0085 26.1973 27.7363C26.5931 27.4395 27.026 27.2168 27.4961 27.0684C27.9661 26.9199 28.4486 26.8457 28.9434 26.8457C29.3887 26.8457 29.834 26.9323 30.2793 27.1055C30.7493 27.2539 31.1699 27.4766 31.541 27.7734C31.9121 28.0703 32.209 28.429 32.4316 28.8496C32.679 29.2454 32.8027 29.6784 32.8027 30.1484Z" fill="black"/>
+                    </svg>
+                        
+                    <p class="font-sans text-lg">The Premium Pearl</p>                            
+                </span>
+
+                <div class="flex">
+                    <img src="./images/premium-pearl.png" alt="" width="230" height="230" class="hover:scale-105 transition duration-200">
+                    <svg width="25" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-16 ml-4 cursor-pointer hover:scale-105 transition duration-200">
+                        <path d="M11.0545 33.1446L8.29091 28.1668L3.05455 26.9223L3.56364 21.1667L0 16.8111L3.56364 12.4555L3.05455 6.69984L8.29091 5.45538L11.0545 0.477539L16 2.73312L20.9455 0.477539L23.7091 5.45538L28.9455 6.69984L28.4364 12.4555L32 16.8111L28.4364 21.1667L28.9455 26.9223L23.7091 28.1668L20.9455 33.1446L16 30.889L11.0545 33.1446ZM14.4727 22.3334L22.6909 13.5444L20.6545 11.2888L14.4727 17.9L11.3455 14.6333L9.30909 16.8111L14.4727 22.3334Z" fill="#699BF7"/>
+                    </svg>
+                        
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="flex absolute right-32 items-center gap-x-2 mt-10 cursor-pointer">
+            <span class="text-[#7C82FF] hover:text-[#5c62d7] font-semibold text-lg duration-100">See all top selling items</span>
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <path d="M14.7071 8.70711C15.0976 8.31659 15.0976 7.68342 14.7071 7.2929L8.34315 0.928936C7.95262 0.538411 7.31946 0.538411 6.92894 0.928935C6.53841 1.31946 6.53841 1.95262 6.92893 2.34315L12.5858 8.00001L6.92893 13.6569C6.53841 14.0474 6.5384 14.6805 6.92893 15.0711C7.31945 15.4616 7.95262 15.4616 8.34314 15.0711L14.7071 8.70711ZM-4.4112e-07 9L14 9.00001L14 7.00001L4.4112e-07 7L-4.4112e-07 9Z" fill="#7C82FF"/>
+            </svg>        
+        </div>
+
+        <div class="flex absolute left-[36rem] -bottom-32 border-2 border-[#FFDE82] px-5 py-2 gap-x-2">
+            <a href="" class="appearance-none text-[#651A1A]">GO TO TOP</a>
+            <img src="./images/ArrowUp.png" class="scale-75">
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer class="bg-[url('./images/Footer-bg.png')] bg-[length:106%_106%] mt-64 pb-10">
+
+        <div>
+            <!--Contact Boxes-->
+            <div class="max-w-[1080px] pt-10 mx-auto grid grid-cols-3 gap-x-5">
+                <!--box 1-->
+                <div class="flex w-fit border border-[#FFDE82] px-10 gap-x-5 items-center py-4">
+                    <!--left part-->
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white opacity-90">Connect On</p>
+                        <h2 class="text-white font-bold text-2xl">WhatsApp</h2>
+                        <div class="flex bg-gradient-to-r from-[#FFDC7C] via-[#FFF0C7] to-[#FFDE82] justify-center items-center py-2 gap-x-1 cursor-pointer">
+                            <span class="text-[#8a4343]">Connect</span>
+                            <svg width="15" height="15" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L10.5147 1.3934C9.92893 0.807611 8.97919 0.807611 8.3934 1.3934C7.80761 1.97919 7.80761 2.92893 8.3934 3.51472L16.8787 12L8.3934 20.4853C7.80761 21.0711 7.80761 22.0208 8.3934 22.6066C8.97919 23.1924 9.92893 23.1924 10.5147 22.6066L20.0607 13.0607ZM0 13.5H19V10.5H0V13.5Z" fill="#A85E5E"/>
+                            </svg>    
+                        </div>
+                    </div>
+
+                    <!--right part-->
+                    <div>
+                        <svg width="90" height="100" viewBox="0 0 137 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M117.035 20.3494C110.724 13.8736 103.206 8.73907 94.9199 5.24536C86.6342 1.75165 77.7466 -0.0313285 68.7754 0.000416557C31.1864 0.000416557 0.550755 31.1183 0.550755 69.2989C0.550755 81.5362 3.71759 93.4239 9.63819 103.913L0 139.856L36.1432 130.206C46.1256 135.73 57.3472 138.667 68.7754 138.667C106.364 138.667 137 107.549 137 69.3688C137 50.8379 129.909 33.4259 117.035 20.3494ZM68.7754 126.919C58.5864 126.919 48.604 124.122 39.8608 118.878L37.7955 117.619L16.3161 123.353L22.0301 102.095L20.6533 99.9272C14.9925 90.7455 11.9867 80.1324 11.9789 69.2989C11.9789 37.5516 37.4512 11.6784 68.7065 11.6784C83.8522 11.6784 98.103 17.6921 108.774 28.6009C114.058 33.9431 118.245 40.2974 121.093 47.2956C123.941 54.2937 125.393 61.7964 125.365 69.3688C125.503 101.116 100.031 126.919 68.7754 126.919ZM99.893 83.8438C98.1718 83.0047 89.7729 78.809 88.2583 78.1797C86.6749 77.6203 85.5734 77.3405 84.403 79.0188C83.2327 80.767 79.997 84.683 79.0332 85.8018C78.0693 86.9906 77.0367 87.1304 75.3156 86.2214C73.5945 85.3822 68.0869 83.4942 61.6156 77.6203C56.5211 73.005 53.1477 67.3409 52.1151 65.5927C51.1512 63.8445 51.9774 62.9354 52.8724 62.0264C53.6296 61.2572 54.5935 59.9985 55.4196 59.0195C56.2457 58.0405 56.5899 57.2713 57.1407 56.1524C57.6915 54.9637 57.4161 53.9847 57.003 53.1455C56.5899 52.3064 53.1477 43.7752 51.7708 40.2788C50.394 36.9223 48.9482 37.3419 47.9156 37.2719H44.611C43.4407 37.2719 41.6507 37.6915 40.0673 39.4397C38.5528 41.1879 34.1467 45.3836 34.1467 53.9147C34.1467 62.4459 40.2739 70.6974 41.1 71.8163C41.9261 73.005 53.1477 90.487 70.2211 97.9692C74.2829 99.7874 77.4497 100.836 79.9281 101.605C83.9899 102.934 87.7075 102.724 90.6678 102.305C93.9724 101.815 100.788 98.1091 102.165 94.0533C103.611 89.9975 103.611 86.571 103.129 85.8018C102.647 85.0326 101.614 84.683 99.893 83.8438Z" fill="url(#paint0_linear_15_13)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_15_13" x1="16" y1="-1.93479e-07" x2="120.22" y2="137.799" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFDE82"/>
+                            <stop offset="0.5" stop-color="#F9E9BF"/>
+                            <stop offset="1" stop-color="#FFDC7C"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                                  
+                    </div>
+                    
+                </div>
+
+                <!--box2-->
+                <div class="flex w-fit border border-[#FFDE82] px-10 gap-x-7  items-center py-4">
+                    <!--left part-->
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white opacity-90">Connect On</p>
+                        <h2 class="text-white font-bold text-2xl">WhatsApp</h2>
+                        <div class="flex bg-gradient-to-r from-[#FFDC7C] via-[#FFF0C7] to-[#FFDE82] justify-center items-center py-2 gap-x-1 cursor-pointer">
+                            <span class="text-[#8a4343]">Connect</span>
+                            <svg width="15" height="15" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L10.5147 1.3934C9.92893 0.807611 8.97919 0.807611 8.3934 1.3934C7.80761 1.97919 7.80761 2.92893 8.3934 3.51472L16.8787 12L8.3934 20.4853C7.80761 21.0711 7.80761 22.0208 8.3934 22.6066C8.97919 23.1924 9.92893 23.1924 10.5147 22.6066L20.0607 13.0607ZM0 13.5H19V10.5H0V13.5Z" fill="#A85E5E"/>
+                            </svg>    
+                        </div>
+                    </div>
+
+                    <!--right part-->
+                    <div>
+                        <svg width="100" height="90" viewBox="0 0 137 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M91.3333 18.7155V93.5776H15.2222V18.7155H91.3333ZM98.9444 0H7.61111C5.59252 0 3.6566 0.985906 2.22924 2.74083C0.801882 4.49575 0 6.87593 0 9.35776V102.935C0 105.417 0.801882 107.797 2.22924 109.552C3.6566 111.307 5.59252 112.293 7.61111 112.293H98.9444C100.963 112.293 102.899 111.307 104.326 109.552C105.754 107.797 106.556 105.417 106.556 102.935V70.1832L137 107.614V4.67888L106.556 42.1099V9.35776C106.556 6.87593 105.754 4.49575 104.326 2.74083C102.899 0.985906 100.963 0 98.9444 0Z" fill="url(#paint0_linear_15_46)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_15_46" x1="0" y1="0" x2="100.296" y2="112.919" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFDC7C"/>
+                            <stop offset="0.523958" stop-color="#F9E9BF"/>
+                            <stop offset="1" stop-color="#FFDC7C"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>                  
+                    </div>
+                    
+                </div>
+
+                <!--box3-->
+                <div class="flex w-fit border border-[#FFDE82] px-10 gap-x-6  items-center py-4">
+                    <!--left part-->
+                    <div class="flex flex-col gap-y-2">
+                        <p class="text-white opacity-90">Connect On</p>
+                        <h2 class="text-white font-bold text-2xl">WhatsApp</h2>
+                        <div class="flex bg-gradient-to-r from-[#FFDC7C] via-[#FFF0C7] to-[#FFDE82] justify-center items-center py-2 gap-x-1 cursor-pointer">
+                            <span class="text-[#8a4343]">Connect</span>
+                            <svg width="15" height="15" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0607 13.0607C20.6464 12.4749 20.6464 11.5251 20.0607 10.9393L10.5147 1.3934C9.92893 0.807611 8.97919 0.807611 8.3934 1.3934C7.80761 1.97919 7.80761 2.92893 8.3934 3.51472L16.8787 12L8.3934 20.4853C7.80761 21.0711 7.80761 22.0208 8.3934 22.6066C8.97919 23.1924 9.92893 23.1924 10.5147 22.6066L20.0607 13.0607ZM0 13.5H19V10.5H0V13.5Z" fill="#A85E5E"/>
+                            </svg>    
+                        </div>
+                    </div>
+
+                    <!--right part-->
+                    <div>
+                        <svg width="70" height="100" viewBox="0 0 100 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 77.0011C45.5049 77.0011 41.1109 75.5899 37.3734 72.9458C33.6359 70.3018 30.7229 66.5437 29.0027 62.1468C27.2826 57.7499 26.8325 52.9116 27.7094 48.2439C28.5863 43.5762 30.7509 39.2886 33.9294 35.9233C37.1078 32.5581 41.1574 30.2663 45.5661 29.3379C49.9748 28.4094 54.5445 28.8859 58.6973 30.7072C62.8502 32.5284 66.3997 35.6126 68.897 39.5697C71.3943 43.5268 72.7272 48.1791 72.7272 52.9383C72.72 59.3178 70.3232 65.4339 66.0626 69.9449C61.802 74.4559 56.0254 76.9935 50 77.0011ZM50 38.5006C47.303 38.5006 44.6665 39.3474 42.424 40.9338C40.1815 42.5203 38.4337 44.7751 37.4016 47.4133C36.3695 50.0514 36.0995 52.9543 36.6256 55.755C37.1518 58.5556 38.4505 61.1282 40.3576 63.1473C42.2647 65.1665 44.6945 66.5415 47.3396 67.0986C49.9848 67.6557 52.7267 67.3698 55.2184 66.277C57.7101 65.1842 59.8398 63.3337 61.3382 60.9595C62.8366 58.5852 63.6363 55.7938 63.6363 52.9383C63.6327 49.1104 62.1949 45.4403 59.6383 42.7335C57.0818 40.0268 53.6154 38.5044 50 38.5006Z" fill="url(#paint0_linear_17_45)"/>
+                            <path d="M50 134.752L11.6546 86.8716C11.1218 86.1526 10.5945 85.4291 10.0728 84.7011C3.52269 75.5658 -0.0158236 64.4076 5.31949e-05 52.9382C5.31949e-05 38.8981 5.26789 25.4331 14.6447 15.5052C24.0215 5.5774 36.7392 0 50 0C63.2608 0 75.9785 5.5774 85.3553 15.5052C94.7321 25.4331 99.9999 38.8981 99.9999 52.9382C100.016 64.4024 96.4789 75.5555 89.9318 84.6867L89.9272 84.7011C89.9272 84.7011 88.5636 86.5973 88.359 86.8523L50 134.752ZM17.3273 78.902C17.3364 78.902 18.3909 80.3842 18.6319 80.7019L50 119.871L81.4091 80.6489C81.6091 80.3842 82.6727 78.8923 82.6772 78.8875C88.0279 71.4238 90.9196 62.3084 90.909 52.9382C90.909 41.4508 86.599 30.434 78.9271 22.3112C71.2551 14.1885 60.8498 9.62512 50 9.62512C39.1502 9.62512 28.7449 14.1885 21.0729 22.3112C13.401 30.434 9.09095 41.4508 9.09095 52.9382C9.08142 62.3142 11.9718 71.4348 17.3273 78.902Z" fill="url(#paint1_linear_17_45)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_17_45" x1="35.6362" y1="29.2605" x2="64.1168" y2="75.5879" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFDC7C"/>
+                            <stop offset="0.505208" stop-color="#F9E9BF"/>
+                            <stop offset="1" stop-color="#FFDC7C"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_17_45" x1="50" y1="0" x2="50" y2="134.752" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFDC7C"/>
+                            <stop offset="0.523958" stop-color="#F9E9BF"/>
+                            <stop offset="1" stop-color="#FFDC7C"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                            
+                                  
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <!--dETAILS-->
+            <div class="grid grid-cols-4 max-w-[1080px] mx-auto mt-5">
+                <!--list1-->
+                <div class="text-white">
+                    <h2 class="font-bold text-3xl mb-5">Useful Links</h2>
+                    <div class="flex-flex-col ml-2">
+                        <ul class="space-y-3">
+
+                            <li>Delivery Information</li>
+                            <li>International Shipping</li>
+                            <li>Payment Options</li>
+                            <li>Track your Order</li>
+                            <li>Returns</li>
+                            <li>Find a Store</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!--list2-->
+                <div class="text-white">
+                    <h2 class="font-bold text-3xl mb-5">Information</h2>
+                    <div class="flex-flex-col ml-2">
+                        <ul class="space-y-3">
+
+                            <li>Careers</li>
+                            <li>Blog</li>
+                            <li>Offers & Contest Details</li>
+                            <li>Help & FAQs</li>
+                            <li>About Company Name</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!--list3-->
+                <div class="text-white">
+                    <h2 class="font-bold text-3xl mb-5">Contact Us</h2>
+                    <div class="flex-flex-col ml-2">
+                        <ul class="space-y-5">
+
+                            <li>
+                                <div class="flex gap-x-3">
+                                    <img src="./images/Vector.png" alt="" width="35" class="hover:scale-105 transition duration-200">
+                                    <span>Write to us</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-x-3">
+                                    <img src="./images/Vector (1).png" alt="" width="30" height="25" class="hover:scale-105 transition duration-200">
+                                    <span>999-999-999</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-x-3">
+                                    <img src="./images/Vector (2).png" alt="" width="35" class="hover:scale-105 transition duration-200">
+                                    <span>Chat With Us</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            
+
+                <!--list4-->
+                <div class="text-white">
+                    <h2 class="font-bold text-3xl mb-3">Download the App </h2>
+                    <div class="flex-flex-col ml-2">
+                        <ul class="space-y-5">
+
+                            <li></li>
+                            
+                        </ul>
+                    </div>
+                    <h2 class="font-bold text-3xl mb-5 mt-24">Follow Us On</h2>
+                    <div class="flex gap-x-4 ml-1">
+                        <a href="#" class="hover:scale-105 transition duration-100">
+                            <img src="./images/fb.png" alt="" width="65%" height="65%">
+                        </a>
+                        <a href="#" class="hover:scale-105 transition duration-100">
+                            <img src="./images/insta icon.png" alt="" width="65%" height="65%">
+                        </a>
+                        <a href="#" class="hover:scale-105 transition duration-100">
+                            <img src="./images/twitter.png" alt="" width="65%" height="65%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+</html>
